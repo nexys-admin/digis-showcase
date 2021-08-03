@@ -8,9 +8,13 @@ const VideosAndText = [
     text: "accounting - account fuction types",
     videoId: 561870292
   },
-  {title: "Regus", videoId: 560990229},
-  {title: "Byjuno", videoId: 560807962},
-  {title: "Reconciliation", videoId: 573976726}
+  {title: "Regus", text: "Example of an IBAN payment", videoId: 560990229},
+  {title: "Byjuno", text: "Example of a BVR payment", videoId: 560807962},
+  {
+    title: "Reconciliation",
+    text: "Basic account reconciliation",
+    videoId: 573976726
+  }
 ];
 const videoIdToSrc = (videoId) => `https://player.vimeo.com/video/${videoId}?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479`;
 export default () => /* @__PURE__ */ React.createElement("div", {
@@ -20,7 +24,7 @@ export default () => /* @__PURE__ */ React.createElement("div", {
 }, VideosAndText.map((v, i) => {
   const T = /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("p", {
     className: "mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl"
-  }, v.title));
+  }, v.title), v.text && /* @__PURE__ */ React.createElement("p", null, v.text));
   const V = /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement(Vimeo, {
     src: videoIdToSrc(v.videoId)
   }));
