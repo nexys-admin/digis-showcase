@@ -10,6 +10,7 @@ const VideosAndText = [
   },
   {title: "Regus", text: "Example of an IBAN payment", videoId: 560990229},
   {title: "Byjuno", text: "Example of a BVR payment", videoId: 560807962},
+  {title: "QRBill", text: "Example of a QRBill payment", videoId: 547944407},
   {
     title: "Reconciliation",
     text: "Basic account reconciliation",
