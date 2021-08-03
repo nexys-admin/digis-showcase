@@ -7,11 +7,6 @@ on:
     branches:
       - master
 
-env:
-  HOST: 142.93.169.227
-  REMOTE_PATH: tailwind
-  ZIPFILE: tailwind.zip
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -34,7 +29,7 @@ jobs:
       - run: yarn
       - run: yarn test
       - name: Build page
-        run: SNOWPACK_PUBLIC_GIT_SHA=$GITHUB_SHA SNOWPACK_PUBLIC_URL=/boilerplate_snowpack_tailwind yarn buildAll
+        run: SNOWPACK_PUBLIC_GIT_SHA=$GITHUB_SHA SNOWPACK_PUBLIC_URL=/finy-showcase yarn buildAll
       - name: add 404
         run: cp build/index.html build/404.html
   gh-pages:
