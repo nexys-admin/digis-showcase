@@ -8,7 +8,9 @@ export default () => {
     <>
       <Videos />
       <p className={"p-8"}>
-        <small>{Config.sha}</small>
+        <small>
+          <a href={Config.github.sha}>{Config.sha}</a>
+        </small>
       </p>
     </>
   );
