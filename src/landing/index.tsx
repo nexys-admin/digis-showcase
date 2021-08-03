@@ -1,13 +1,15 @@
 import React from "react";
 
-import Hero from "./hero";
-import Features from "./features";
-import CallToAction from "./call-to-action";
+import Videos from "./videos";
+import * as Config from "../config";
 
-export default () => (
-  <>
-    <Hero />
-    <CallToAction />
-    <Features />
-  </>
-);
+export default () => {
+  return (
+    <>
+      <Videos />
+      <p className={"p-8"}>
+        <small>{Config.sha}</small>
+      </p>
+    </>
+  );
+};
