@@ -10,9 +10,13 @@ const VideosAndText: { title: string; videoId: number; text?: string }[] = [
     text: "accounting - account fuction types",
     videoId: 561870292,
   },
-  { title: "Regus", videoId: 560990229 },
-  { title: "Byjuno", videoId: 560807962 },
-  { title: "Reconciliation", videoId: 573976726 },
+  { title: "Regus", text: "Example of an IBAN payment", videoId: 560990229 },
+  { title: "Byjuno", text: "Example of a BVR payment", videoId: 560807962 },
+  {
+    title: "Reconciliation",
+    text: "Basic account reconciliation",
+    videoId: 573976726,
+  },
 ];
 
 const videoIdToSrc = (videoId: number) =>
@@ -27,6 +31,7 @@ export default () => (
             <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
               {v.title}
             </p>
+            {v.text && <p>{v.text}</p>}
           </div>
         );
         const V = (
