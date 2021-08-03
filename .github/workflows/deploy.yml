@@ -32,10 +32,6 @@ jobs:
         run: SNOWPACK_PUBLIC_GIT_SHA=$GITHUB_SHA SNOWPACK_PUBLIC_URL=/finy-showcase yarn buildAll
       - name: add 404
         run: cp build/index.html build/404.html
-  gh-pages:
-    runs-on: ubuntu-latest
-    needs: ["build"]
-    steps:
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:
