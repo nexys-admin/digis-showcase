@@ -6,5 +6,5 @@ export default () => {
     className: "p-8"
   }, /* @__PURE__ */ React.createElement("small", null, /* @__PURE__ */ React.createElement("a", {
     href: Config.github.sha
-  }, Config.sha))));
+  }, Config.version))));
 };

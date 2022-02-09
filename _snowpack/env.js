@@ -1,4 +1,5 @@
-export const SNOWPACK_PUBLIC_GIT_SHA = "9eab753f1000e0656fbd10d257c45fe2cd76ce57";
+export const SNOWPACK_PUBLIC_GIT_SHA = "1330107a545cb795513e52a7f90da70906afbaff";
+export const SNOWPACK_PUBLIC_VERSION = "v1.0.1";
 export const SNOWPACK_PUBLIC_URL = "/finy-showcase";
 export const MODE = "development";
 export const NODE_ENV = "development";
