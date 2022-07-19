@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, Switch, BrowserRouter as Router } from "react-router-dom";
 
-import Landing from "./landing";
+import Videos from "./videos";
 
 import { basename } from "./config";
 
@@ -11,7 +11,7 @@ export default () => {
   return (
     <Router basename={basename}>
       <Switch>
-        <Route exact path={links.landing.link} component={Landing} />
+        <Route exact path={links.landing.link} component={Videos} />
       </Switch>
     </Router>
   );
